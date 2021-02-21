@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1 , shrink-to-fit=no"
+    />
+    <title>Kirył Sobolew Portfolio</title>
+    <meta name="description" content="Junior Front-end developer's portfolio" />
+    <meta
+      name="keywords"
+      content="junior,developer,javascript,jquery,scss,html5,es6"
+    />
+    <meta name="author" content="Kirył Sobolew" />
+    <meta http-equiv="X-Ua-Compatible" content="IE=edge,chrome=1" />
+    <?php include('form.php');?>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/fontawesome.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2&family=Montserrat&family=Open+Sans:wght@600;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="wrapper">
+      <div id="first" class="main">
+        <header id="header">
+          <nav>
+            <div id="left"></div>
+            <ul class="links">
+              <li><a href="#first">HOME</a></li>
+              <li><a href="#second">ABOUT ME</a></li>
+              <li><a href="#portfolio-container">MY PROJECTS</a></li>
+              <li><a href="#contact-form">CONTACT</a></li>
+            </ul>
+            <div class="burger-menu">
+              <div class="line1"></div>
+              <div class="line2"></div>
+              <div class="line3"></div>
+            </div>
+          </nav>
+        </header>
+        <img src="images/animation2.gif" />
+        <h1>KIRYŁ SOBOLEW</h1>
+        <h2>JUNIOR FRONT-END DEVELOPER</h2>
+        <i class="far fa-arrow-alt-circle-down"></i>
+      </div>
+      <main id="second" class="main">
+        <section class="under-main">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-4">
+                <img src="images/face.png" class="my-photo" />
+                <p class="about-me">ABOUT ME</p>
+                <h2 class="together">Let's work together</h2>
+                <article class="introduction">
+                  I am a student at WSB University in Poznan , studying computer
+                  sciense. My passion is creating modern , responsive web-sites
+                  , constantly improvid my skills and learning new technologies.
+                </article>
+              </div>
+              <div class="col-md-8" id="right">
+                <div class="right">
+                  <h2 id="skills">
+                    List of my current skills:
+                  </h2>
+                  <div id="showgrid">
+                      <div class="column"><img src="images/html.png" /></div>
+                      <div class="column"><img src="images/css.png" /></div>
+                      <div class="column"><img src="images/js.png" /></div>
+                      <div class="column"><img src="images/jquery.png" /></div>
+                      <div class="column"><img src="images/ps.png" /></div>
+                      <div class="column"><img src="images/react.png" /></div>
+                      <div class="column"><img src="images/seo.png" /></div>
+                      <div class="column"><img src="images/sql.png" /></div>
+                      <div class="column"><img src="images/wp.png" /></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+        <div id="portfolio-container" class="main">
+            <p class="portfolio-p">MY PROJECTS</p>
+            <p class="portfolio-second-p"></p>
+            <div class="row">
+                <div class="col-md-6">
+                  <div class="portfolio-wrapper portfolio-item">
+                     <img src="images/zprzepisnikadietetyka.png"/>
+                     <div class="left-side"></div>
+                     <div class="right-side"></div>
+                     <div class="buttons">
+                        <a href="https://zprzepisnikadietetyka.pl/" class="fa fa-link"></a>
+                        <p class="fa fa-search 0" id="search-button"></p>
+                     </div>
+                    </div>
+                </div>
+                <div class="modal-global">
+                  <div id="mWindow" class="pop-up 0" style="display:none">
+                    <div class="modal-header">                  
+                      <span class="name">Zprzepisnikadietetyka.pl</span>
+                      <span class="close">&times</span>
+                    </div>
+                  <div class="modal-body">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="window-side">
+                          <p>Technologies used in project:</p>
+                          <ul>
+                            <li><i class="fas fa-check-circle"></i>Wordpress</li>
+                            <li><i class="fas fa-check-circle"></i>Yoast SEO</li>
+                            <li><i class="fas fa-check-circle"></i>SEO Optimalisation</li>
+                            <li><i class="fas fa-check-circle"></i>Elementor</li>
+                          </ul>
+                        </div>
+                      </div>
+                    <div class="col-md-6">
+                      <div class="window-side">
+                        <img src="images/zprzepisnikadietetyka.png">
+                      </div>
+                    </div>
+                    </div>
+                   </div>    
+                 </div>
+
+
+                 <div id="mWindow1" class="pop-up 1" style="display:none">
+                  <div class="modal-header">                  
+                    <span class="name">Os-tech.pl</span>
+                    <span class="close">&times</span>
+                  </div>
+                <div class="modal-body">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="window-side">
+                        <p>Technologies used in project:</p>
+                        <ul>
+                          <li><i class="fas fa-check-circle"></i> Semanthic HTML</li>
+                          <li><i class="fas fa-check-circle"></i> CSS</li>
+                          <li><i class="fas fa-check-circle"></i> Javascript</li>
+                          <li><i class="fas fa-check-circle"></i> PHP</li>
+                          <li><i class="fas fa-check-circle"></i> Form-validation</li>
+                          <li><i class="fas fa-check-circle"></i> Bootsrap 4</li>
+                        </ul>
+                      </div>
+                    </div>
+                  <div class="col-md-6">
+                    <div class="window-side">
+                      <img src="images/ostech.png">
+                    </div>
+                  </div>
+                </div>
+                </div>
+               </div>
+
+
+
+               <div id="mWindow2" class="pop-up 2" style="display:none">
+                <div class="modal-header">                  
+                  <span class="name">Film-help.pl</span>
+                  <span class="close">&times</span>
+                </div>
+              <div class="modal-body">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="window-side">
+                      <p>Technologies used in project:</p>
+                      <ul>
+                        <li><i class="fas fa-check-circle"></i> Semanthic HTML</li>
+                        <li><i class="fas fa-check-circle"></i> CSS</li>
+                        <li><i class="fas fa-check-circle"></i> Jquery</li>
+                        <li><i class="fas fa-check-circle"></i> PHP</li>
+                        <li><i class="fas fa-check-circle"></i> MySQL</li>
+                      </ul>
+                    </div>
+                  </div>
+                <div class="col-md-6">
+                  <div class="window-side">
+                    <img src="images/filmhelp.png">
+                  </div>
+                </div>
+              </div>
+              </div>
+             </div>
+
+
+
+             <div id="mWindow3" class="pop-up 3" style="display:none">
+              <div class="modal-header">                  
+                <span class="name">Paper Rock Scissors</span>
+                <span class="close">&times</span>
+              </div>
+            <div class="modal-body">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="window-side">
+                    <p>Technologies used in project:</p>
+                    <ul>
+                      <li><i class="fas fa-check-circle"></i> HTML</li>
+                      <li><i class="fas fa-check-circle"></i> CSS</li>
+                      <li><i class="fas fa-check-circle"></i> Javascript</li>
+                    </ul>
+                  </div>
+                </div>
+              <div class="col-md-6">
+                <div class="window-side">
+                  <img src="images/kpn.png">
+                </div>
+              </div>
+            </div>
+            </div>
+           </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="portfolio-wrapper portfolio-item">
+                  <img src="images/ostech.png" />
+                  <div class="left-side"></div>
+                  <div class="right-side"></div>
+                  <div class="buttons">
+                     <a href="http://www.os-tech.pl/" class="fa fa-link"></a>
+                     <p class="fa fa-search 1" id="search-button"></p>
+                  </div>
+                </div>
+                </div>
+                
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                  <div class="portfolio-wrapper portfolio-item">
+                  <img src="images/filmhelp.png" />
+                  <div class="left-side"></div>
+                  <div class="right-side"></div>
+                  <div class="buttons">
+                     <a href="#" class="fa fa-link"></a>
+                     <p class="fa fa-search 2" id="search-button"></p>
+                  </div>
+                </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="portfolio-wrapper portfolio-item">
+                  <img src="images/kpn.png" />
+                  <div class="left-side"></div>
+                  <div class="right-side"></div>
+                  <div class="buttons">
+                     <a href="#" class="fa fa-link"></a>
+                     <p class="fa fa-search 3" id="search-button" ></p>
+                  </div>
+                  </div>
+                </div>
+                
+            </div>
+          </div>
+          <div class="main">
+               <div class="row">
+                     <div class="col-md-12">
+                       <div class="form-wrapper">
+                        <p class="p-form">THANKS FOR CONTACT</p>
+                      </div>
+                     </div>
+               </div>
+          </div>
+          <footer>
+              <div class="footer">
+                <p>&copy 2020 My Portfolio Made By Kirył Sobolew</p>
+              </div>
+          </footer>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="scripts/setheigth.js"></script>
+    <script src="scripts/app.js"></script>
+    <script src="scripts/modalhandle.js"></script>
+    <script src="scripts/validation.js"></script>
+  </body>
+</html>

@@ -1,0 +1,351 @@
+@import "scss/fontawesome.scss";
+@import "scss/solid.scss";
+@import "scss/brands.scss";
+@import "scss/regular.scss";
+$backgroundColor: #222222;
+$limecolor: #d2ea4c;
+$mainFont: "Open Sans", sans-serif;
+$h2font: "Montserrat", sans-serif;
+$thirdfont: "Baloo Paaji 2", cursive;
+$mobile: 600px;
+$tablet: 768px;
+body {
+  width: 100%;
+}
+#header {
+  width: 100%;
+  height: 10vh;
+  background-color: $backgroundColor;
+}
+#first {
+  background-color: $backgroundColor;
+  text-align: center;
+}
+#first > img {
+  width: 300px;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+#first > h1 {
+  color: white;
+  font-size: 80px;
+  text-align: center;
+  font-family: $mainFont;
+  color: $limecolor;
+}
+#first > h2 {
+  color: $limecolor;
+  text-align: center;
+  font-family: $h2font;
+  letter-spacing: 7px;
+}
+#first > i {
+  color: $limecolor;
+  font-size: 120px;
+  margin-top: 30px;
+}
+
+/*===========MENU==========*/
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 10vh;
+}
+.links {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+}
+.links li {
+  letter-spacing: 3px;
+  color: $limecolor;
+  text-decoration: none;
+  font-size: 14px;
+  list-style: none;
+  font-family: $h2font;
+  transition: width 2s;
+  padding-bottom: 10px;
+  /**/
+  background-image: linear-gradient($limecolor);
+  background-size: 0 2px, auto;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  transition: all 0.2s ease-out;
+}
+.links li:hover {
+  cursor: pointer;
+  background-size: 100% 2px, auto;
+}
+.burger-menu {
+  display: none;
+}
+.burger-menu div {
+  width: 30px;
+  height: 3px;
+  background-color: $limecolor;
+  margin: 5px;
+}
+#left {
+  width: 70%;
+}
+/*===========MENU==========*/
+
+/*============HOME/MENU-MOBILE============*/
+@media (max-width: $mobile) {
+  #first > img {
+    width: 150px;
+    height: 150px;
+  }
+  #first > i {
+    margin-top: 30px;
+    font-size: 60px;
+    text-align: center;
+  }
+  #first > h1 {
+    font-size: 20px;
+  }
+  #first > h2 {
+    font-size: 20px;
+    letter-spacing: 3px;
+  }
+}
+@media (max-width: $tablet) {
+  #first > i {
+    margin-top: 70px;
+  }
+  #first > h1 {
+    font-size: 50px;
+  }
+  #first > h2 {
+    font-size: 20px;
+    letter-spacing: 3px;
+  }
+  #wrapper {
+    overflow-x: hidden;
+    position: relative;
+  }
+  .links {
+    position: absolute;
+    right: 0px;
+    height: 85vh;
+    top: 10vh;
+    display: flex;
+    background-color: $backgroundColor;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    transform: translateX(120%);
+    transition: transform 0.5s ease-in;
+  }
+  .links li {
+    //opacity: 0;
+    margin-right: 40px;
+  }
+  .burger-menu {
+    display: block;
+  }
+  .menu-active {
+    transform: translateX(0%);
+  }
+  .overflow-block {
+    overflow-y: hidden;
+    position: relative;
+  }
+}
+@media (max-width: 1024px) {
+  .links li {
+    letter-spacing: 1px;
+  }
+}
+@media (max-width: 850px) {
+  .links {
+    font-size: 10px;
+  }
+}
+/*============HOME-MOBILE============*/
+
+/*============MAIN============*/
+.main {
+  border-left: 20px solid $limecolor;
+  border-right: 20px solid $limecolor;
+  transition: 0.8s;
+}
+.hide-borders {
+  border-left: 20px solid $backgroundColor;
+  border-right: 20px solid $backgroundColor;
+  transition: 0.8s;
+}
+
+#left-side {
+  width: 35%;
+  text-align: center;
+  float: left;
+  margin-top: 100px;
+  margin-left: 15%;
+}
+#left-side > p {
+  font-size: 24px;
+  color: $limecolor;
+  font-family: $h2font;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+#about-me {
+  font-family: $mainFont;
+  font-size: 48px;
+  font-weight: 900;
+}
+#self-introduction {
+  font-family: $mainFont;
+  width: 350px;
+  display: inline-block;
+  margin: 0 auto;
+  font-size: 20px;
+}
+#right-side {
+  text-align: center;
+  float: left;
+  width: 35%;
+  margin-right: 00px;
+}
+#right-side > article > section {
+  font-family: $thirdfont;
+  font-size: 44px;
+  font-weight: 900;
+  margin-top: 150px;
+  text-transform: uppercase;
+}
+.net {
+  width: 450px;
+  height: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 5px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+.cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 30px;
+  margin-top: 30px;
+}
+.cell > img {
+  width: 110px;
+}
+.centered {
+}
+/---------portfolio--------------/
+#portfolio-container {
+  background-color: #222222;
+  text-align: center;
+}
+.portfolio-item {
+  display: inline-block;
+  margin-bottom: 100px;
+  overflow: hidden;
+  position: relative;
+  -webkit-box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.1);
+}
+.portfolio-item > img {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 90%;
+  border-radius: 7px 7px 7px 7px;
+  -moz-border-radius: 7px 7px 7px 7px;
+  -webkit-border-radius: 7px 7px 7px 7px;
+}
+.portfolio-p {
+  padding: 20px 0 20px 0;
+  color: #d2ea4c;
+  font-size: 36px;
+  text-align: center;
+}
+.portfolio-item .left-side {
+  background: rgba(0, 0, 0, 0.5);
+  width: 50%;
+  height: 100%;
+  left: -50%;
+  top: 0;
+  position: absolute;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.portfolio-item .right-side {
+  background: rgba(0, 0, 0, 0.5);
+  width: 50%;
+  height: 100%;
+  left: 100%;
+  position: absolute;
+  top: 0;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.portfolio-item .buttons {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.portfolio-item .buttons .fa {
+  background: rgb(256, 256, 256);
+  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  color: rgba(50, 50, 50, 0.9);
+  display: inline-block;
+  margin: 0 1px;
+  line-height: 40px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  width: 40px;
+  height: 40px;
+  -webkit-transition: all 0.2s 0.3s;
+  -moz-transition: all 0.2s 0.3s;
+  -o-transition: all 0.2s 0.3s;
+  transition: all 0.2s 0.3s;
+  opacity: 0;
+}
+.portfolio-item:hover .left-side {
+  left: 0;
+  top: 0;
+}
+.portfolio-item:hover .right-side {
+  left: 50%;
+  top: 0;
+}
+.portfolio-item:hover .buttons .fa {
+  opacity: 1;
+}
+/------------portfolio--------------/
+
+                 <ul class="list-of-skills">
+                    <li><img src="images/html.png" /></li>
+                    <li><img src="images/css.png" /></li>
+                    <li><img src="images/js.png" /></li>
+                    <li><img src="images/jquery.png" /></li>
+                    <li><img src="images/ps.png" /></li>
+                    <li><img src="images/react.png" /></li>
+                    <li><img src="images/seo.png" /></li>
+                    <li><img src="images/sql.png" /></li>
+                    <li><img src="images/wp.png" /></li>
+                  </ul>
